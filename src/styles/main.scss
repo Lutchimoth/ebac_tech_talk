@@ -1,3 +1,57 @@
-body {
-    background-color: red;
+@use '_hero';
+@use '_frontend';
+@use '_backend';
+@use 'components/_infos_bar';
+@use 'components/_buttons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+.section {
+    padding: 80px 203px;
+    
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    &__title {
+        text-align: left;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.09px;
+        margin-bottom: 16px;
+    }
+    &__text {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    &__image {
+        width: 360px;
+        height: 196px;
+        margin-top: 21px;
+    }
 }
