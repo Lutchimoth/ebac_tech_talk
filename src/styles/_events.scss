@@ -1,0 +1,39 @@
+.frontend {
+    background: linear-gradient(180deg, #1B6CA7 0%, #442BDB 100%);
+}
+
+.backend {
+    background: linear-gradient(180deg, #442BDB 0%, #89223B 100%);
+
+    .container {
+        @media (max-width: 640px){
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+    
+        @media (max-width: 1024px) {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+    }
+}
+
+.ui-ux {
+    background: linear-gradient(180deg, #89223B 0%, #9C791D 100%);
+}
+
+.data-science {
+    background: linear-gradient(180deg, #9C791D 0%, #89223B 100%);
+
+    .container {
+        @media (max-width: 640px){
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+    
+        @media (max-width: 1024px) {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+    }
+}
