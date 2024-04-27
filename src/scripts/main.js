@@ -1,6 +1,6 @@
 AOS.init();
 
-const eventTime = new Date ("Mar 27, 2024 19:00:00");
+const eventTime = new Date ("May 27, 2024 19:00:00");
 const eventTimeStamp = eventTime.getTime();
 
 const counter = setInterval(function() {
